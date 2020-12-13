@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style_index.css">
+</head>
+<body>
+
+    <header>
+        <div class="imagen_portada">
+            <!--start navbar de contacto-->
+
+            <nav>
+                <div class="navbar_contacto">
+                    <div class="enlaces_pagina">
+                        <a href="../html/index.html">Inicio</a> 
+                        <a href="../html/quienes_somos.html"> Quienes somos</a> 
+                        <a href="https://www.kross.cl"> Otros Productos</a>
+                    </div>
+
+                    <div class="two columns u-pull-right">
+                        <ul>
+                            <li class="submenu">
+                                <img src="../img/svg/comercio-y-compras.svg" id="img-carrito">
+                                <div id="carrito">
+    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+    
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </nav>
+            <!--end navbar de contacot-->
+
+
+        </div>
+    </header>
+    <div class="container">
+        <div class="formulario_web">
+            <h1>Formulario de Contacto</h1>
+            <form action="" id="enviar-email">
+                <div class="info_personal">
+                    <fieldset>
+                        <legend>Informacion Personal</legend>
+    
+                        <label for="nombre">Nombre:</label>
+                        <br>
+                        <input type="text" id="nombre" placeholder="Ingrese su Nombre" required>
+                        <br>
+                        <label for="email">E-mail:</label>
+                        <br>
+                        <input type="email" id="email" placeholder="Ingrese su Correo" required>
+                        <br>
+                        <label for="telefono">Teléfono: </label>
+                        <br>
+                        <input type="tel" id="telefono" placeholder="Ingrese su Teléfono" required>
+                        <br>
+                        <label for="mensaje">Mensaje:</label>
+                        <br>
+                        <textarea name="" id="mensaje" cols="30" rows="10" required></textarea>
+                        <br>
+                        
+                    </fieldset>
+                </div>
+                <div class="suger">
+                    <fieldset>
+                        <legend>Contacto</legend>
+                        <p>¿Como deseas que te contactemos?</p>
+                        <br>
+                        <input type="radio" name="contacto" value="telefono" id="telefono">
+    
+                        <label for="telefono">Teléfono</label>
+    
+                        <br>
+                        <input type="radio" name="contacto" value="correo" id="correo">
+                        <label for="correo">Correo</label>
+                    </fieldset>
+                </div>
+    
+                <div class="btn_and_gif">
+                    <input class="btn_enviar" type="submit" id="enviar">
+                    <div class="row" id="loaders">
+                        <img src="../img/spinnerBlack.gif" id="spinner" alt="">
+                    </div>
+                </div>
+            </form>
+    
+        </div>
+    </div>
+
+    <footer>
+        <div class="otros_contactos">
+            <div class="direccion_telefono">
+                <u>Otros Contactos</u>
+                <ul>
+                    <li>
+                        <p>WhatsApp +569 98765432</p>
+                    </li>
+                    <li>
+                        <p>Dirección: Av. O'Higgins #1234</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="redes_sociales">
+                <u>Nuestras Redes Sociales</u>
+
+                <div class="logos">
+                    <a href="https://www.facebook.com">
+                        <img src="../img/redes sociales/logo-facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <img src="../img/redes sociales/logo-twitter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script_formulario.js"></script>
+</body>
+</html>

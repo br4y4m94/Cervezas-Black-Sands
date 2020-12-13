@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+
+/*----------------- AJUSTES GENERALES---------------*/
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+.sitio {
+    height: 100vh;
+    min-height: 600px;
+    max-width: 1480px;
+}
+
+/*----------------- AJUSTES DEL NAVBAR Y DE LA IMAGEN DE PORTADA---------------*/
+.imagen_portada {
+    height: 800px;
+    width: 1480px;
+    display: flex;
+    /*background-image: url("http://placehold.it/1480x800");*/
+    background-image: url("../img/20140414182846-BS_Kickstarter_Bumper_01.png");
+    background-size: 1480px 800px;
+}
+
+.navbar_contacto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: black;
+    height: 4rem;
+}
+
+.navbar_contacto .enlaces_pagina a {
+    font-size: 3rem;
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar_contacto .enlaces_pagina a:hover{
+    color: cadetblue;
+}
+.navbar_contacto .carro_compra{
+    margin-left: 88rem;
+    margin-top: 0.5rem;
+}
+
+/*----------------- CSS DEL SUBMENU DESPLEGABLE DEL CARRITO DE COMPRAS---------------*/
+.submenu {
+    position: relative;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    
+}
+.submenu img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+#lista-carrito{
+    padding-bottom: 2rem;
+}
+
+#vaciar-carrito{
+    border: 1px black solid;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black; 
+    margin-left: 4.5rem;
+}
+
+
+/*---------- CSS TABLA MENU DESPLEDABLE CARRITO-------------*/
+th,
+td {
+    padding: 25px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+    font-size: 2rem;
+}
+
+td a{
+    text-decoration: none;
+    background-color:cadetblue;
+    border-radius: 0px;
+    padding:0.7rem;
+    color: white;
+    border-radius: 50px;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+
+
+/*----------------- AJUSTES DE LOS PRODUCTOS---------------*/
+.promociones{
+    display: flex;
+}
+
+.presentacion_producto{
+    width: 20rem;
+    border: solid 1px #D9E0DF;
+    margin-left: 25rem;
+    margin-top: 5rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.presentacion_producto .imagen_producto img{
+    width: 20rem;
+    height: 40rem;
+}
+
+.presentacion_producto .nombre_producto{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.presentacion_producto .precio_producto{
+    color: cadetblue;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.presentacion_producto .agregar_producto a{
+    text-decoration: none;
+    padding: 0.7rem;
+    border:none;
+    color: white;
+    font-size: 3rem;
+    background: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 12rem;
+    height: 5rem;
+    border-radius: 3px;
+}
+
+.presentacion_producto .agregar_producto a:hover{
+    transition: 0.5s;
+    background: cadetblue;
+}
+
+
+/*----------------- AJUSTES DEL FOOTER---------------*/
+
+footer{
+    margin-top: 5rem;
+    background: black;
+    height: 40rem;
+    display: flex;
+    color: white;
+    padding-top: 10rem;
+    padding-left: 30rem;
+}
+
+.formulario_contacto {
+    line-height: 9rem;
+}
+.formulario_contacto .titulo_contacto{
+    font-size: 5rem;
+}
+
+.formulario_contacto .formulario{
+    display: flex;
+}
+
+.formulario_contacto a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    height: 8rem;
+    width: 30rem;
+    border: none;
+    background: cadetblue;
+}
+
+.otros_contactos{
+    margin-left: 30rem;
+    font-size: 2rem;
+    width: 50rem;
+    line-height: 5rem;
+}
+
+.otros_contactos u{
+    font-size: 3rem;
+}
+.otros_contactos .redes_sociales img{
+    margin-top: 2rem;
+    margin-right: 3rem ;
+    width: 5rem;
+    height: 5rem;
+}
+
+/*----------------- QUIENES SOMOS---------------*/
+
+h1{
+    font-size: 7rem;
+}
+.container{
+    margin-left: 20rem;
+    width: 60%;
+}
+.texto{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+/*----------------- FORMULARIO CONTACTO-----------------------*/
+
+
+.container .formulario_web{
+    width: 60rem;
+    margin-left: 25rem;
+}
+
+.container .formulario_web h1{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;  
+}
+
+.container .formulario_web form{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.container .formulario_web form fieldset *{
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.container .formulario_web form .info_personal label{
+    margin-top: 1rem;
+}
+
+input{
+    margin-top: 1rem;
+    width: 55rem;
+    border-radius: 5% 5% 5% 5%;
+    border: 0.1rem solid black;
+}
+.container .formulario_web form  .btn_enviar{
+    margin-left: 20rem;
+    margin-top: 1rem;
+    width: 20rem;
+    height: 5rem;
+    border: 0.1rem solid black;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+}
+.container .formulario_web form .btn_and_gif {
+    display: flex;
+}
+.container .formulario_web form .btn_and_gif img{
+    width: 5rem;
+    height: 5rem;
+    padding-top: 1rem;
+}
+#spinner{
+    display: none;
+}
+
+.container .formulario_web form fieldset{
+    border: 0.3rem solid black;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+textarea{
+    width: 55rem;
+    border: 0.1rem solid black;
+}
+
+.error-input{
+    border: 1px solid red;
+}
+
+.validar-input{
+    border: 1px solid black;
+}
